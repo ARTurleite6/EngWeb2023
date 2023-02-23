@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iogurte</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="grid-box">
     <header>
         <h1>Iogurte</h1>
-        <table>
+        <table class="iogurte-tabela">
             <tr>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Joghurt.jpg/220px-Joghurt.jpg">
             </tr>
             <tr>
                 <td>
-                    Type
+                    Tipo
                 </td>
                 <td>
                     Produto Lácteo
@@ -80,10 +81,10 @@
             and Streptococcus thermophilus bacteria.
         </p>
         <p>
-            Após o aquecimento, o leite pode esfriar até cerca de 45 °C (113 °F). A cultura bacteriana é misturada e uma
+            Após o aquecimento, o leite pode arrefecer até cerca de 45 °C (113 °F). A cultura bacteriana é misturada e uma
             temperatura quente de 30-45 °C (86-113 °F) é mantida por 4 a 12 horas para permitir que a fermentação
-            ocorra, com as temperaturas mais altas trabalhando mais rápido, mas arriscando uma textura irregular ou soro
-            de leite separação.
+            ocorra, com as temperaturas mais altas trabalhando mais rápido, mas arriscando uma textura irregular ou separação do soro
+            de leite.
         </p>
 
         <h2 id="historia">História</h2>
@@ -136,39 +137,80 @@
                 </ul>
             </li>
         </ul>
-
-
-        <h2 id="nutricao">Nutrição</h2>
-
-        <h2 id="intolerancia-lactose">Intolerãncia à lactose</h2>
         <h2 id="tipos-iogurte">Tipos de Iogurte de diferentes países: </h2>
         <!--Colocar os varios tipos de Iogurte acompanhados com a bandeira do país-->
         <ul>
-            <li>Grécia: Iogurte grego, que é um iogurte espesso e cremoso, é um produto popular na Grécia e é
-                frequentemente usado em pratos salgados e doces.</li>
+            <li class="iogurte-pais">
+                <div>
+                    Grécia: Iogurte grego, que é um iogurte espesso e cremoso, é um produto popular na Grécia e é
+                    frequentemente usado em pratos salgados e doces.
+                </div>
+                <img height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.Rr0v6crd4cu_rFUwN-mIrgHaEK%26pid%3DApi&f=1&ipt=291fd311d6d1fe8ee244c0cb41e02dd050f49fd1aee24b3ca9c1f50402bb234f&ipo=images">
+            </li>
 
-            <li>Turquia: Iogurte turco, ou "yoğurt", é um iogurte espesso e azedo, frequentemente servido com kebab e
-                outros pratos salgados.</li>
+            <li class="iogurte-pais">
+                <div>
+                    Turquia: Iogurte turco, ou "yoğurt", é um iogurte espesso e azedo, frequentemente servido com kebab e
+                    outros pratos salgados.
+                </div>
+                <img height="50" width="80" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.explicit.bing.net%2Fth%3Fid%3DOIP.-IxeXH1d8wzjPQiUAckEagHaFL%26pid%3DApi&f=1&ipt=aa3b74c02c9d638d782b812c4d2b8092480a6d11dd57df86662f4450896943e9&ipo=images">
+            </li>
 
-            <li>Índia: Dahi é um iogurte indiano feito com leite de vaca ou búfalo e é comumente usado em pratos
-                indianos, como biryanis e curry.</li>
+            <li class="iogurte-pais">
+                <div>
+                    Índia: Dahi é um iogurte indiano feito com leite de vaca ou búfalo e é comumente usado em pratos
+                    indianos, como biryanis e curry.
+                </div>
+                <img height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP._UwAM8KgxPnF9gaDoS3Z4gHaEK%26pid%3DApi&f=1&ipt=8231b4cc62a00e25193b5326f3a8598183eefb9f4d5dc8728e0f232c4b66bd19&ipo=images">
+            </li>
 
-            <li>Líbano e Síria: Labneh é um iogurte espesso e cremoso feito a partir de leite de cabra ou de vaca,
-                frequentemente temperado com azeite e especiarias.</li>
+            <li class="iogurte-pais">
+                <div>
+                    Líbano e Síria: Labneh é um iogurte espesso e cremoso feito a partir de leite de cabra ou de vaca,
+                    frequentemente temperado com azeite e especiarias.
+                </div>
+                <img style="margin-right: 5px;" height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.8F4TdDfu9iP8OaqPrY0D6gAAAA%26pid%3DApi&f=1&ipt=7ad7cbe6f2e581c331a2e03d9bf9660ec19a975cb199db58192dbf1ac532ada8&ipo=images">
+                <img height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1hjJXwFisPRInYDynADptAHaE7%26pid%3DApi&f=1&ipt=b3da575ab505b1b73ace360d465c0facb4a9f8a8816b63f195929fafc00bea49&ipo=images">
+            </li>
 
-            <li>Bulgária: Iogurte búlgaro é conhecido por sua consistência cremosa e sabor suave, é usado em muitos
-                pratos, como sopas e ensopados.</li>
+            <li class="iogurte-pais">
+                <div>
+                    Bulgária: Iogurte búlgaro é conhecido por sua consistência cremosa e sabor suave, é usado em muitos
+                    pratos, como sopas e ensopados.
+                </div>
+                <img height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.tqqw0bwKnHyd0ER7J2oAZwHaEc%26pid%3DApi&f=1&ipt=07146c5d76764edefedd1b657266d00992463157ac12f9016dbf8ebe64bc8b5b&ipo=images">
+            </li>
 
-            <li>Armênia: Matzoon é um iogurte armênio espesso e azedo, feito a partir de leite de vaca ou de cabra,
-                comumente usado em pratos salgados e sobremesas.</li>
+            <li class="iogurte-pais">
+                <div>
+                    Armênia: Matzoon é um iogurte armênio espesso e azedo, feito a partir de leite de vaca ou de cabra,
+                    comumente usado em pratos salgados e sobremesas.
+                </div>
+                <img height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1pVcioa6KOHKw32CWUXPYwHaDt%26pid%3DApi&f=1&ipt=cc5d71c7ec9837498b6295c9982f0fb561d239e8a5ce07499d57962ec7ad2b61&ipo=images">
+            </li>
 
-            <li>Rússia: Kefir é um iogurte fermentado com levedura que é popular na Rússia e em outros países do Leste
-                Europeu.</li>
+            <li class="iogurte-pais">
+                <div>
+                    Rússia: Kefir é um iogurte fermentado com levedura que é popular na Rússia e em outros países do Leste
+                    Europeu.
+                </div>
+                <img height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Isu4U_H7fWZbv3vYTNEnVQHaE8%26pid%3DApi&f=1&ipt=1172c8bfc9f01e7285510972e849299e77b134ac7394f2bab3b11f5147095fb5&ipo=images">
+            </li>
 
-            <li>Japão: Iogurte Yakult é um tipo popular de iogurte fermentado com levedura e lactobacilos vivos.</li>
+            <li class="iogurte-pais">
+                <div>
+                    Japão: Iogurte Yakult é um tipo popular de iogurte fermentado com levedura e lactobacilos vivos.
+                </div>
+                <img height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.83E__DNWQ-h9ep9DnJcWmAHaD4%26pid%3DApi&f=1&ipt=e9effa8032ea1865ae79f1cb5a543f8e8f8f3c44952d290afa92d5d104604143&ipo=images">
+            </li>
 
-            <li>Estados Unidos: Iogurte americano é geralmente feito com leite desnatado e açúcar adicionado, com uma
-                grande variedade de sabores disponíveis.</li>
+            <li class="iogurte-pais">
+                <div>
+                    Estados Unidos: Iogurte americano é geralmente feito com leite desnatado e açúcar adicionado, com uma
+                    grande variedade de sabores disponíveis.
+                </div>
+                <img height="50" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP._bXkIFzJJOBL9ig-ZORiyAHaD5%26pid%3DApi&f=1&ipt=ded54afbdeeb49a1f8bb4caa2b85dea08e8b0348ca2ba6c37c9f7aa9c8f41273&ipo=images">
+            </li>
         </ul>
         <p>Esses são apenas alguns exemplos de iogurtes populares em diferentes países, existem muitas outras variedades
             de iogurte em todo o mundo.</p>

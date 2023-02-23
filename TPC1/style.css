@@ -1,0 +1,9 @@
+.iogurte-pais {
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.iogurte-tabela, td, th {
+    border: 1px solid;
+}
