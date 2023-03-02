@@ -1,12 +1,13 @@
 import { readFile } from 'fs';
 import { createServer } from 'http';
 
-const html_files_directory = 'html_files';
+const html_files_directory = 'html_files/';
 
 const server = createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html' });
 
     if (req.url != undefined) {
+
         if (req.url == "/") {
             readFile(html_files_directory + 'index.html', (err, data) => {
                 if (err) {
