@@ -61,8 +61,9 @@ function addTodoForm(): string {
 }
 
 export function editTodoForm(todo: Todo | null): string {
+
     let page = `
-        <form class="w3-container" action="/editTodo" method="post">
+        <form class="w3-container" action="/todos/editTodo/${todo?.id ?? -1}" method="post">
             <fieldset>
                 <legend>Edit Todo</legend>
                 <label for="when"> When </label>
@@ -110,8 +111,10 @@ function todosTable(todos: Todo[]): string {
                 <td>${todo.what}</td>
                 <td>${todo.who}</td>
                 <td>
-                [<a href="/todos/markDone/${todo.id}">Done</a>]
-                [<a href="/todos/markDone/${todo.id}">Edit</a>]
+                <form>
+                <input formmethod="post" formaction="/todos/markDone/${todo.id}" class="w3-btn w3-purple w3-mb-2" type="submit" value="Done">
+                <input formmethod="get" formaction="/todos/editTodo/${todo.id}" class="w3-btn w3-purple w3-mb-2" type="submit" value="Edit" disable/>
+                </form>
                 </td>
             </tr>
         `;
@@ -158,7 +161,7 @@ export function initialPage(date: string, editTodo: Todo | null, todos: Todo[]):
 }
 
 export function sendPageResponse(page: string, res: ServerResponse<IncomingMessage>) {
-    console.log(page);
+    //console.log(page);
     res.writeHead(200, { 'Content-Type': 'text/html;charset=utf-8' });
     res.end(page);
 }
